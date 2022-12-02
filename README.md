@@ -5,7 +5,10 @@
 - Open CMD in Administrator
 - Change directory to where ever you saved NEO-Info-Generator-main
   - Example: ```cd C:\Users\nlueth\Desktop\Neo-Info-Gernerator-main\```
-- Then run the following command <br>
-```run.bat```
+- Then run the following commands <br>
+```
+Install_WIN.bat
+python3 main.py
+```
 
 After you do that the NEO information should populate the location you specified on line 66.
