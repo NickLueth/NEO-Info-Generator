@@ -53,7 +53,7 @@ class Hire:
 
 def add_hires():
     all_hires = []
-    ex_data = pd.read_excel('DecemberOrientation.xlsx')
+    ex_data = pd.read_excel('Example.xlsx') # Change this file to the path of the Excel file that you want to read from
     first_names = ex_data['First Name'].values.tolist()
     last_names = ex_data['Last Name'].values.tolist()
     titles = ex_data['Position'].values.tolist()
@@ -66,7 +66,7 @@ def add_hires():
 
 
 def print_hires(hires_list):
-    file = open("NewHireInfo\HireInfoDecember2022.txt", "w+")
+    file = open("NewHireInfo\Example.txt", "w+") # Change this file to the path where you want to save the data and what you want to name it
     for hire in hires_list:
         file.write(hire.__str__())
 
