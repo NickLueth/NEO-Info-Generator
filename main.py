@@ -1,5 +1,6 @@
 # New Hire Info Grabber
 # Created by: Nick Lueth, 8/3/2022
+# Last updated: 12/2/2022
 import string
 from random import randint
 import pandas as pd
