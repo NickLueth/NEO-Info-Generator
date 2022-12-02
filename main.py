@@ -12,8 +12,11 @@ class Hire:
         self.title = ttl
         self.department = dpmt
         self.manager = mngr
-
-        temp_last_name = self.last_name.lower().replace(" ", "")
+        invalid_characters = ["'", " ", "."]
+        temp_last_name = ""
+        for character in self.last_name.lower():
+            if character not in invalid_characters:
+                temp_last_name += character
         self.email = fname[0].lower() + temp_last_name + "@walkercares.org"
         self.username = fname[0].lower() + temp_last_name
 
@@ -50,7 +53,7 @@ class Hire:
 
 def add_hires():
     all_hires = []
-    ex_data = pd.read_excel('Example.xlsx') # Change this file to the path of the Excel file that you want to read from
+    ex_data = pd.read_excel('DecemberOrientation.xlsx')
     first_names = ex_data['First Name'].values.tolist()
     last_names = ex_data['Last Name'].values.tolist()
     titles = ex_data['Position'].values.tolist()
@@ -63,7 +66,7 @@ def add_hires():
 
 
 def print_hires(hires_list):
-    file = open("NewHireInfo\Example.txt", "w+") # Change this file to the path where you want to save the data and what you want to name it
+    file = open("NewHireInfo\HireInfoDecember2022.txt", "w+")
     for hire in hires_list:
         file.write(hire.__str__())
 
