@@ -3,7 +3,7 @@
 - Make sure you have python3 and pip installed on you Windows machine
 - Open the main.py in a text editor or IDE and change the lines 53, and 66 to choose what Excel file to read from and where to save the file to
 - Open CMD in Administrator
-- Change directory to where ever you saved NEO-Info-Generator-master/NEO-Info-Generator 
+- Change directory to where ever you saved NEO-Info-Generator-main
 - Then run the following command <br>
 ```run.bat```
 
